@@ -107,7 +107,7 @@ cmd({
 
 cmd({
   pattern: "stabilityai",
-  alias: ["stability", "imagine3","aiimg3","aiimg4],
+  alias: ["stability", "imagine3","aiimg3","aiimg4"],
   react: "🚀",
   desc: "Generate an image using AI.",
   category: "main",
