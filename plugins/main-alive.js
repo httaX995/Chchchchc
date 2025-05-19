@@ -69,31 +69,34 @@ async (conn, mek, m, { from, sender, reply }) => {
 ╰━━〔 *✨ ALIVE END ✨* 〕━━╯
 `;
 
-        // 1. Send voice message first
-        await conn.sendMessage(
-            from,
-            {
-                audio: { url: 'https://github.com/Chamijd/KHAN-DATA/raw/refs/heads/main/autovoice/cm4ozo.mp3' },
-                mimetype: 'audio/mp4',
-                ptt: true
-            },
-            { quoted: mek }
-        );
+        // First, try sending the video
+        const sendMenuVideo = async () => {
+            try {
+                return await conn.sendMessage(
+                    from,
+                    {
+                        video: { url: 'https://github.com/Chamijd/KHAN-DATA/raw/refs/heads/main/logo/VID-20250508-WA0031(1).mp4' },
+                        mimetype: 'video/mp4',
+                        ptv: true
+                    },
+                    { quoted: mek }
+                );
+            } catch (e) {
+                console.log('Video send failed, continuing without it:', e);
+                throw e;
+            }
+        };
 
-        // 2. Send video (ptv mode)
-        await conn.sendMessage(
-            from,
-            {
-                video: { url: 'https://github.com/Chamijd/KHAN-DATA/raw/refs/heads/main/logo/VID-20250508-WA0031(1).mp4' },
-                mimetype: 'video/mp4',
-                ptv: true
-            },
-            { quoted: mek }
-        );
+        try {
+            await sendMenuVideo();
+        } catch (err) {
+            // fallback to image
+            console.log("Fallback to image because video failed.");
+        }
 
-        // 3. Send final status image + caption
+        // Send caption + image regardless
         await conn.sendMessage(from, {
-            image: { url: || 'https://files.catbox.moe/z2nfoo.jpg' },
+            image: { url: config.MENU_ALIVE_URL || 'https://files.catbox.moe/z2nfoo.jpg' },
             caption: status,
             contextInfo: {
                 mentionedJid: [m.sender],
