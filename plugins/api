@@ -1,0 +1,10 @@
+'DERANA_API': process.env.DERANA_API || 'https://suhas-bro-api.vercel.app/news/derana',
+  'HIRU_API': process.env.HIRU_API || 'https://suhas-bro-apii.vercel.app/hiru',
+  'BBC_API': process.env.BBC_API || 'https://suhas-bro-api.vercel.app/news/bbc',
+  'LANKADEEPA_API': process.env.LANKADEEPA_API || 'https://suhas-bro-api.vercel.app/news/lankadeepa',
+  'ITN_API': process.env.ITN_API || 'https://suhas-bro-api.vercel.app/news/itn',
+  'SIYATHA_API': process.env.SIYATHA_API || 'https://suhas-bro-api.vercel.app/news/siyatha',
+  'LANKANEWS_API': process.env.LANKANEWS_API || 'https://suhas-bro-api.vercel.app/news/derana',
+  'GOSSIPLANKA_API': process.env.GOSSIPLANKA_API || 'https://suhas-bro-api.vercel.app/news/gossiplankanews',
+  'TECH_API': process.env.TECH_API || 'https://apis.davidcyriltech.my.id/random/technews',
+  'NETH_API': process.env.NETH_API || 'https://suhas-bro-api.vercel.app/news/nethnews'
