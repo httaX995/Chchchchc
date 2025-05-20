@@ -101,7 +101,7 @@ cmd({
                 return await conn.sendMessage(
                     from,
                     {
-                        image: { url: 'https://files.catbox.moe/ww4val.jpg' },
+                        image: { url: 'https://raw.githubusercontent.com/CHIAMA2008/Us/refs/heads/main/IMG-20250505-WA0115.jpg' },
                         caption: menuCaption,
                         contextInfo: contextInfo
                     },
