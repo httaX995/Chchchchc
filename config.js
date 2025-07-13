@@ -5,14 +5,14 @@ function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "CHAMA-MD=ekpXnCaC#0i0ZPNWL8hShJvjxRaVB6VCRfbS-s4mpQygvxTfkoEg",
+SESSION_ID: process.env.SESSION_ID || "CHAMA-MD=j84ilBSR#SGORfVVbkQKB2UBPgLYHjZrSWxF4ELwAlhE-96OyYHI",
 // add your Session Id 
-AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "true",
+AUTO_STATUS_SEEN: process.env.AUTO_STATUS_SEEN || "false",
 // make true or false status auto seen
 AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || "false",
 // make true if you want auto reply on status 
 AI_CHAT:process.env.AI_CHAT || "true",
-AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "true",
+AUTO_STATUS_REACT: process.env.AUTO_STATUS_REACT || "false",
 // make true if you want auto reply on status 
 AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || "*SEEN YOUR STATUS BY CHAMA-MD-V1🤍*",
 // set the auto reply massage on status reply  
@@ -31,7 +31,7 @@ BOT_NAME: process.env.BOT_NAME || "CHAMA-MD-V1",
 STICKER_NAME: process.env.STICKER_NAME || "CHAMA-MD-V1",
 // type sticker pack name 
 CUSTOM_REACT: process.env.CUSTOM_REACT || "false",
-AUTO_NEWS_JID:process.env.AUTO_NEWS_JID || "120363401632076767@newsletter",// මෙතනට ඔයාට news යන්න ඔන ග්‍රප් එක්ව්ව් jid එක දාන්න කෝ🥰 හොදද
+AUTO_NEWS_JID:process.env.AUTO_NEWS_JID || "120363382687971134@newsletter",// මෙතනට ඔයාට news යන්න ඔන ග්‍රප් එක්ව්ව් jid එක දාන්න කෝ🥰 හොදද
 // make this true for custum emoji react    
 CUSTOM_REACT_EMOJIS: process.env.CUSTOM_REACT_EMOJIS || "💝,💖,💗,❤️‍🩹,❤️,🧡,💛,💚,💙,💜,🤎,🖤,🤍",
 // chose custom react emojis by yourself 
@@ -63,9 +63,9 @@ PUBLIC_MODE: process.env.PUBLIC_MODE || "true",
 // make false if want private mod
 AUTO_TYPING: process.env.AUTO_TYPING || "false",
 // true for automatic show typing   
-READ_CMD: process.env.READ_CMD || "teue",
+READ_CMD: process.env.READ_CMD || "true",
 // true if want mark commands as read 
-DEV: process.env.DEV || "94774575878",
+DEV: process.env.DEV || "94779510013",
 //replace with your whatsapp number        
 ANTI_VV: process.env.ANTI_VV || "true",
 // true for anti once view 
